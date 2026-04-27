@@ -59,10 +59,16 @@ print(retorna_indice("palmeiras nao tem mundial", "a"))
 print("============================")
 
 def isfloat(texto):
+    if texto.count('.')>1:
         return False
     if texto[0] == '-' or texto[0]=='+':
         texto = texto[1:]
     texto = texto.replace('.', '')
+    return texto.isdigit()
+
+print(isfloat("45.78"))
+print(isfloat("-12.45"))
+print(isfloat("abc"))
 
 def eh_numero(texto):
     if texto[0] == '-' or texto[0]== '+':
