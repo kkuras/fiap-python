@@ -15,6 +15,7 @@ tupla = (1,2,3,4,5)
 print("fatiamento da tu-pla: ", tupla[1:4])
 
 print("=================================")
+
 nome = "python"
 print("primeira letra: ", nome[0])
 print("fatiamento: ", nome[0:3])
