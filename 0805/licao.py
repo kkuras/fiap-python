@@ -12,11 +12,11 @@ linhas = dados.splitlines()
 
 linha = linhas[0]
 dado = linha.split(";")
-cliente = dado[0].strip().lower()
-produto = dado[1].strip().lower()
-preco = float(dado[2].strip())
-estado = dado[3].strip().upper()
-
+cliente = dados[0].strip().lower()
+produto = dados[1].strip().lower()
+preco = dados[2].strip()
+estado = dados[3].strip().upper()
+print(dado)
 
 registro = [cliente, produto, preco, estado]
 registros = []
@@ -25,10 +25,10 @@ linha = linhas[0]
 def mostrar_listar():
     for linha in linhas:
         dado = linha.split(";")
-        cliente = dado[0].strip().lower()
-        produto = dado[1].strip().lower()
-        preco = float(dado[2].strip())
-        estado = dado[3].strip().upper()
+        cliente = dados[0].strip().lower()
+        produto = dados[1].strip().lower()
+        preco = dados[2].strip()
+        estado = dados[3].strip().upper()
         registro = [cliente, produto, preco, estado]
         registros.append(registro)
 
