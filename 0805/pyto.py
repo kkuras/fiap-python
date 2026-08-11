@@ -54,9 +54,9 @@ for linha in linhas:
     registro = [email, produto, preco]
     registros.append(registro)
 
-#for registro in registros:
+for registro in registros:
     
-    #print(registros)
+    print(registros)
 
     
 for registro in registros:
@@ -68,15 +68,15 @@ print("================================")
 
 precos = []
 for registro in registros:
-    #precos.append(registro[2])
-    #len(precos) #quantidade de precos
-    #sum(precos) #somatoria
-    #max(precos) #maior preco
-    #max(precos) #menor preco
-    #media = sum(precos) / len(precos)
-    #print(media)
-    #precos_ordenados = sorted(precos)
-    #print(precos_ordenados)
+    precos.append(registro[2])
+    len(precos) #quantidade de precos
+    sum(precos) #somatoria
+    max(precos) #maior preco
+    max(precos) #menor preco
+    media = sum(precos) / len(precos)
+    print(media)
+    precos_ordenados = sorted(precos)
+    print(precos_ordenados)
 
     #busca de produtos
     print("busca")
