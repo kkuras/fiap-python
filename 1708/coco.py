@@ -183,3 +183,6 @@ try:
 
 except ValueError as erro:
     print("\nErro:", erro)
+
+for produto in produtos:
+    print(produto)
